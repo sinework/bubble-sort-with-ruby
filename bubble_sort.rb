@@ -20,11 +20,10 @@ def bubble_sort(nums)
 
     i += 1
     break if swap == false
-
-    puts i
+    print " \n On the #{i} iteration the result is: \n #{nums} \n"
   end
 
-  print nums
+ 
 end
 nums = [1, 5, 6, 3, 2, 9, 4, 8, 7]
 bubble_sort(nums)
@@ -54,13 +53,12 @@ def bubble_sort_by(words)
     end
     i += 1
     break if swap == false
-
+    print " on the #{i} iteration the result is: \n #{words} \n"
   end
 
-  print  " \n #{words} \n"
+  
 end
 
 bubble_sort_by(['microverse', 'is', 'the', 'best', 'techonogy', 'bootcamp', 'in', 'the', 'world']) { |left, right|
   left.length - right.length
 }
-
