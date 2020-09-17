@@ -20,12 +20,13 @@ def bubble_sort(nums)
 
     i += 1
     break if swap == false
+
     print " \n On the #{i} iteration the result is: \n #{nums} \n"
   end
-
- 
 end
 nums = [1, 5, 6, 3, 2, 9, 4, 8, 7]
+
+puts "\n \n ---------The first sorting method---------\n \n"
 bubble_sort(nums)
 # /////////////////////////////////////////////////////
 def bubble_sort_by(words)
@@ -53,12 +54,11 @@ def bubble_sort_by(words)
     end
     i += 1
     break if swap == false
-    print " on the #{i} iteration the result is: \n #{words} \n"
+
+    print "\n on the #{i} iteration the result is: \n #{words} \n"
   end
-
-  
 end
-
-bubble_sort_by(['microverse', 'is', 'the', 'best', 'techonogy', 'bootcamp', 'in', 'the', 'world']) { |left, right|
+puts "\n \n ---------The Second sorting method---------\n \n"
+bubble_sort_by(%w[microverse is the best techonogy bootcamp in the world]) do |left, right|
   left.length - right.length
-}
+end
