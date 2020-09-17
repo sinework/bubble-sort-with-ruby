@@ -57,7 +57,7 @@ def bubble_sort_by(words)
 
   end
 
-  print words
+  print  " \n #{words} \n"
 end
 
 bubble_sort_by(['microverse', 'is', 'the', 'best', 'techonogy', 'bootcamp', 'in', 'the', 'world']) { |left, right|
